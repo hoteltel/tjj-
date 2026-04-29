@@ -1,0 +1,85 @@
+URL: https://www.vstats.gg/statistics/agents/ALL/agents.json.gz
+Status: 200
+Headers: {
+  "Content-Type": "text/html",
+  "Content-Length": "2720",
+  "Connection": "close",
+  "Last-Modified": "Mon, 20 Apr 2026 21:59:17 GMT",
+  "Server": "AmazonS3",
+  "Date": "Sat, 25 Apr 2026 04:35:54 GMT",
+  "Cache-Control": "max-age=600",
+  "ETag": "\"c58cdb36df560945426a50ed85b7b4ef\"",
+  "X-Cache": "Error from cloudfront",
+  "Via": "1.1 8df3a0d9885300dae74a65758d72215c.cloudfront.net (CloudFront)",
+  "X-Amz-Cf-Pop": "SFO53-P10",
+  "X-Amz-Cf-Id": "QgZeznNtGuPXew4IOayoKxY1zFMxmCeq8L0UDDh9NezfIxXIVkUSYw=="
+}
+Raw length: 2720
+First 20 bytes hex: 3c21444f43545950452068746d6c3e0a3c68746d
+Format: Unknown (first bytes: 3c21444f)
+As text: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon48.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords"
+        content="valorant, stats, agents, characters,
+
+=== Trying without .gz extension ===
+Status: 200
+Headers: {
+  "Content-Type": "text/html",
+  "Content-Length": "2720",
+  "Connection": "close",
+  "Last-Modified": "Mon, 20 Apr 2026 21:59:17 GMT",
+  "Server": "AmazonS3",
+  "Date": "Sat, 25 Apr 2026 04:35:54 GMT",
+  "Cache-Control": "max-age=600",
+  "ETag": "\"c58cdb36df560945426a50ed85b7b4ef\"",
+  "X-Cache": "Error from cloudfront",
+  "Via": "1.1 39c7ffec9631618c04161def4d940d54.cloudfront.net (CloudFront)",
+  "X-Amz-Cf-Pop": "SFO53-P10",
+  "X-Amz-Cf-Id": "xO36J4ykB_hhPpHt6pXfUXGr2kHF-KYBQLfeV_JTlL9OYcKOz-vScA==",
+  "Age": "1"
+}
+Raw length: 2720
+First 20 bytes hex: 3c21444f43545950452068746d6c3e0a3c68746d
+As text: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon48.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords"
+        content="valorant, stats, agents, characters,
+
+=== Trying with act parameter ===
+Status: 200
+Raw length: 2720
+First 20 bytes hex: 3c21444f43545950452068746d6c3e0a3c68746d
+As text: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon48.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords"
+        content="valorant, stats, agents, characters,
+
+=== Trying CloudFront direct ===
+Status: None
+Raw length: 55
+First 20 bytes hex: 4572726f723a203c75726c6f70656e206572726f

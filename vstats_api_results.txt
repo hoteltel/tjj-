@@ -1,0 +1,68 @@
+=== TRYING VSTATS.GG API ENDPOINTS ===
+
+Trying: https://www.vstats.gg/statistics/agents/ALL/agents.json.gz
+FAILED - No data returned
+
+Trying: https://www.vstats.gg/statistics/agents/ALL/agents.json
+FAILED - No data returned
+
+Trying: https://www.vstats.gg/api/agents
+FAILED - No data returned
+
+Trying: https://www.vstats.gg/api/v1/agents
+FAILED - No data returned
+
+Trying: https://www.vstats.gg/api/agents/ALL
+FAILED - No data returned
+
+=== TRYING MAP-SPECIFIC ENDPOINTS ===
+
+Trying: https://www.vstats.gg/statistics/agents/Ascent/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/Bind/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/Haven/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/Split/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/Lotus/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/Sunset/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/Icebox/agents.json.gz
+FAILED
+
+=== TRYING RANK-SPECIFIC ENDPOINTS ===
+
+Trying: https://www.vstats.gg/statistics/agents/ALL/Iron/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/ALL/Bronze/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/ALL/Silver/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/ALL/Gold/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/ALL/Platinum/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/ALL/Diamond/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/ALL/Ascendant/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/ALL/Immortal/agents.json.gz
+FAILED
+
+Trying: https://www.vstats.gg/statistics/agents/ALL/Radiant/agents.json.gz
+FAILED

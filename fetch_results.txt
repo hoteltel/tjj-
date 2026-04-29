@@ -1,0 +1,4 @@
+URL: https://www.vstats.gg/statistics/agents/ALL/agents.json.gz
+  Status: 200, CT: text/html, Len: 2720, IsHTML: True
+URL: https://www.vstats.gg/statistics/agents/ALL/agents.json
+  Status: 200, CT: text/html, Len: 2720, IsHTML: True

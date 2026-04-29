@@ -1,0 +1,48 @@
+JS length: 87132
+All URLs found (14):
+  https://playvalorant.com/en-us/news/
+  https://schema.org
+  https://twitter.com/vstatsgg
+  https://www.vstats.gg
+  https://www.vstats.gg/blog
+  https://www.vstats.gg/contact
+  https://www.vstats.gg/history
+  https://www.vstats.gg/plants/details?map=
+  https://www.vstats.gg/ranks
+  https://www.vstats.gg/ranks?region=
+  https://www.vstats.gg/tier-lists
+
+=== SEARCHING FOR DATA LOADING PATTERNS ===
+Agent table patterns: ['agent table']
+
+=== FIRST 5000 CHARS OF JS ===
+
+--- Chunk 0 ---
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/AgentsRoot-L6VNZkTH.js","assets/vendor-vue-BzpaXZV6.js","assets/index-BOShnSr_.js","assets/RankFilter-DbuGoLBS.js","assets/vendor-vuetify-BnhdhtYA.js","assets/vendor-vuetify-Dd0yKHgr.css","assets/RankFilter-yf7pLLJq.css","assets/MapFil
+
+--- Chunk 1 ---
+/PlantsTierlist-BsOwxFxq.js","assets/MapCard-DmQbcEj8.js","assets/MapCard-B2e9ReIX.css","assets/EcoFilter-NhLvtnaJ.js","assets/EcoFilter-0NJmjjA8.css","assets/PlantsTierlist-Csz0wiOT.css","assets/WeaponsRoot-CK2w-VIN.js","assets/WeaponsRoot-DNQPLpNG.css","assets/MapsRoot-DxAFz9fC.js","assets/Abiliti
+
+--- Chunk 2 ---
+ets/index-BJKOw1x_.js","assets/vendor-chart-DfU-FdaB.js","assets/RanksRoot-BThMj7Eu.css","assets/HistoryRoot-D3dbOcvV.js","assets/HistoryRoot-COwgNGzb.css","assets/TierListsRoot-qPAuwqny.js","assets/TierListsRoot-BpcYCLkc.css","assets/PoliciesRoot-CWsqn_mb.js","assets/BlogRoot-BCV9wkw_.js","assets/b
+
+--- Chunk 3 ---
+,Z as ue,d as H,c as K,w as j,_ as re,P as m,$ as I,a0 as c,I as k,K as R,F as q,a1 as _e,a2 as me,a3 as fe}from"./vendor-vue-BzpaXZV6.js";import{c as be,a as Ae,m as ge,V as $,b as M,d as Z,e as P,f as le,g as ye,h as we,i as z,u as ve,j as Te,k as ke,l as Re,n as Ve,o as V,p as Le,q as ee,r as F,s
+
+--- Chunk 4 ---
+t.querySelectorAll('link[rel="modulepreload"]'))N(d);new MutationObserver(d=>{for(const u of d)if(u.type==="childList")for(const o of u.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&N(o)}).observe(document,{childList:!0,subtree:!0});function l(d){const u={};return d.integrity&&(u.integrity
+
+--- Chunk 5 ---
+n",u}function N(d){if(d.ep)return;d.ep=!0;const u=l(d);fetch(d.href,u)}})();const Se="modulepreload",Ce=function(e){return"/"+e},te={},E=function(s,l,N){let d=Promise.resolve();if(l&&l.length>0){document.getElementsByTagName("link");const o=document.querySelector("meta[property=csp-nonce]"),g=(o==nu
+
+--- Chunk 6 ---
+elector(`link[href="${v}"]${B}`))return;const O=document.createElement("link");if(O.rel=b?"stylesheet":Se,b||(O.as="script"),O.crossOrigin="",O.href=v,g&&O.setAttribute("nonce",g),document.head.appendChild(O),b)return new Promise((D,h)=>{O.addEventListener("load",D),O.addEventListener("error",()=>h(
+
+--- Chunk 7 ---
+(o=>{for(const g of o||[])g.status==="rejected"&&u(g.reason);return s().catch(u)})},Ie=be({icons:{defaultSet:"mdi",aliases:Ae,sets:{mdi:ge}},theme:{defaultTheme:"dark",themes:{dark:{colors:{background:"#15202B",surface:"#22303C",accent:"#007acc",team:"#69D2B1",enemy:"#FF5C52"}}}}}),_={ACTIVE_ACT:"9d
+
+--- Chunk 8 ---
+Kills",HEATMAPS_PLANTS:"Plants",HEATMAPS_RANK_LOW:"low",HEATMAPS_RANK_MID:"mid",HEATMAPS_RANK_HIGH:"high",TIMESTAMP_5:"5",TIMESTAMP_10:"10",SIDE_ATTACKER:"Attacker",SIDE_DEFENDER:"Defender",SIDE_ALL:"Both",LOCATION_KILLS:"Kills",LOCATION_DEATHS:"Deaths",LOCATION_KD:"KD",METRIC_PLANT_RATE:"Plants",ME
+
+--- Chunk 9 ---
+_WEAPONS:"weapons",MAP_ALL:"ALL",AGENTS_ALL:"ALL",RANK_ALL:"ALL",ECO_ALL:"ALL",REGION_ALL:"ALL",RANK_NO_COMPARISON:""},i={root:"Root",agents_root:"AgentsRoot",plants_root:"PlantsRoot",plants_tierlist:"PlantsTierlist",weapons_root:"WeaponsRoot",maps_root:"MapsRoot",abilities_root:"AbilitiesRoot",heat

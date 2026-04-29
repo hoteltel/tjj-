@@ -1,0 +1,50 @@
+Chunk file references: 0
+
+All hrefs: 8
+  /favicon.png
+  /favicon.svg
+  /favicon48.ico
+  /apple-touch-icon.png
+  /assets/vendor-vue-BzpaXZV6.js
+  /assets/vendor-vuetify-BnhdhtYA.js
+  /assets/vendor-vuetify-Dd0yKHgr.css
+  /assets/index-CHX8hHto.css
+
+Vite manifest found! Length: 2720
+  First 1000: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon48.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords"
+        content="valorant, stats, agents, characters, comps, tier, list, tracker, ranks, maps, weapons, statistics, gg, val" />
+    <meta name="description"
+        content="Find the best agents, comps, peek spots and plant spots. Tier lists for Valorant stats based on Win Rates. Get the best agent, comp and plant spot." />
+    <meta name="topic" content="Valorant" />
+    <meta property="og:title" content="Valorant stats for Agents, Comps, Plant Spots and Weapons" />
+    <meta property="og:url" content="https://www.vstats.gg" />
+    <meta property
+
+=== Trying chunk files ===
+Potential chunk IDs from first 5000 chars: ['use-credentials', 'same-origin', '12-05']
+
+Dynamic imports: 14
+  ./AbilitiesRoot-1JCwaHqu.js
+  ./AgentsRoot-L6VNZkTH.js
+  ./BlogPost-DMaEHo6h.js
+  ./BlogRoot-BCV9wkw_.js
+  ./HeatmapsDetails-Mcy6KaOT.js
+  ./HeatmapsRoot-CoGYCi8I.js
+  ./HistoryRoot-D3dbOcvV.js
+  ./MapsRoot-DxAFz9fC.js
+  ./PlantsRoot-DhMCJDDr.js
+  ./PlantsTierlist-BsOwxFxq.js
+  ./PoliciesRoot-CWsqn_mb.js
+  ./RanksRoot-DkgDsJOZ.js
+  ./TierListsRoot-qPAuwqny.js
+  ./WeaponsRoot-CK2w-VIN.js

@@ -1,0 +1,12 @@
+
+=== Trying: https://www.vstats.gg/statistics/agents/ALL/agents.json.gz ===
+Failed: None
+
+=== Trying: https://www.vstats.gg/statistics/agents/ALL/agents.json ===
+Failed: None
+
+=== Trying: https://www.vstats.gg/api/agents ===
+Failed: Error: HTTP Error 403: Forbidden
+
+=== Trying: https://www.vstats.gg/api/v1/agents ===
+Failed: Error: HTTP Error 403: Forbidden

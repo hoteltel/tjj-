@@ -1,0 +1,7 @@
+Status: 200
+Content-Type: text/html
+Content-Encoding: None
+Actual length: 2720
+First 20 bytes hex: 3c21444f43545950452068746d6c3e0a3c68746d
+All decompress methods failed
+Raw first 200: b'<!DOCTYPE html>\n<html lang="en">\n\n<head>\n    <meta charset="UTF-8" />\n    <link rel="icon" type="image/png" href="/favicon.png" sizes="48x48" />\n    <link rel="icon" type="image/svg+xml" href="/favico'

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特工详细分析 - VALORANT 数据统计</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="agent-detail.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">← 返回</a>
+            <h1 id="agentName">特工详细分析</h1>
+            <span id="agentRole">-</span>
+        </header>
+
+        <div class="agent-header">
+            <div class="agent-avatar" id="agentAvatar"></div>
+            <div class="agent-quick-stats">
+                <div class="quick-stat">
+                    <span class="label">总体胜率</span>
+                    <span class="value" id="overallWinRate">-</span>
+                </div>
+                <div class="quick-stat">
+                    <span class="label">选取率</span>
+                    <span class="value" id="overallPickRate">-</span>
+                </div>
+                <div class="quick-stat">
+                    <span class="label">K/D</span>
+                    <span class="value" id="overallKD">-</span>
+                </div>
+                <div class="quick-stat">
+                    <span class="label">推荐度</span>
+                    <span class="value tier-badge" id="tierBadge">-</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- 地图表现分析 -->
+            <div class="analysis-section">
+                <h2>🗺️ 地图表现</h2>
+                <div class="map-selector">
+                    <button class="map-btn active" data-map="all">全部</button>
+                    <button class="map-btn" data-map="Ascent">亚海悬城</button>
+                    <button class="map-btn" data-map="Bind">源工重镇</button>
+                    <button class="map-btn" data-map="Haven">隐世修所</button>
+                    <button class="map-btn" data-map="Split">霓虹町</button>
+                    <button class="map-btn" data-map="Lotus">莲华古城</button>
+                    <button class="map-btn" data-map="Sunset">日落之城</button>
+                    <button class="map-btn" data-map="Icebox">森寒冬港</button>
+                </div>
+                <div class="map-rank-selector">
+                    <label>分段筛选:</label>
+                    <select id="mapRankFilter">
+                        <option value="all">全分段</option>
+                        <option value="Radiant">辐能</option>
+                        <option value="Immortal">神话</option>
+                        <option value="Ascendant">超凡</option>
+                        <option value="Diamond">钻石</option>
+                        <option value="Platinum">铂金</option>
+                        <option value="Gold">黄金</option>
+                        <option value="Silver">白银</option>
+                    </select>
+                </div>
+                <div class="map-stats-grid" id="mapStatsGrid"></div>
+                <div class="chart-wrapper">
+                    <canvas id="mapWinRateChart"></canvas>
+                </div>
+                <div class="map-rank-chart-wrapper">
+                    <h3>各分段胜率对比</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="mapRankChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分段表现分析 -->
+            <div class="analysis-section">
+                <h2>📊 分段表现</h2>
+                <div class="rank-tabs">
+                    <button class="rank-btn active" data-rank="all">全部</button>
+                    <button class="rank-btn" data-rank="Radiant"><img class="rank-icon-btn" src="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/27/smallicon.png" alt="" onerror="this.style.display='none'">辐能</button>
+                    <button class="rank-btn" data-rank="Immortal"><img class="rank-icon-btn" src="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/25/smallicon.png" alt="" onerror="this.style.display='none'">神话</button>
+                    <button class="rank-btn" data-rank="Ascendant"><img class="rank-icon-btn" src="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/22/smallicon.png" alt="" onerror="this.style.display='none'">超凡</button>
+                    <button class="rank-btn" data-rank="Diamond"><img class="rank-icon-btn" src="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/19/smallicon.png" alt="" onerror="this.style.display='none'">钻石</button>
+                    <button class="rank-btn" data-rank="Platinum"><img class="rank-icon-btn" src="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/16/smallicon.png" alt="" onerror="this.style.display='none'">铂金</button>
+                    <button class="rank-btn" data-rank="Gold"><img class="rank-icon-btn" src="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/13/smallicon.png" alt="" onerror="this.style.display='none'">黄金</button>
+                    <button class="rank-btn" data-rank="Silver"><img class="rank-icon-btn" src="https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/10/smallicon.png" alt="" onerror="this.style.display='none'">白银</button>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="rankWinRateChart"></canvas>
+                </div>
+            </div>
+
+            <!-- 深度智能分析 -->
+            <div class="analysis-section full-width smart-analysis-section">
+                <h2>🧠 深度智能分析</h2>
+                <div class="smart-analysis-grid">
+                    <div class="smart-card best-maps-card">
+                        <div class="smart-card-header">
+                            <span class="smart-icon">🏆</span>
+                            <h3>最佳地图推荐</h3>
+                        </div>
+                        <div class="smart-card-body" id="bestMaps"></div>
+                    </div>
+                    <div class="smart-card avoid-maps-card">
+                        <div class="smart-card-header">
+                            <span class="smart-icon">⚠️</span>
+                            <h3>避免地图</h3>
+                        </div>
+                        <div class="smart-card-body" id="avoidMaps"></div>
+                    </div>
+                    <div class="smart-card rank-analysis-card">
+                        <div class="smart-card-header">
+                            <span class="smart-icon">📈</span>
+                            <h3>分段深度分析</h3>
+                        </div>
+                        <div class="smart-card-body" id="rankSuggestion"></div>
+                    </div>
+                    <div class="smart-card playstyle-card">
+                        <div class="smart-card-header">
+                            <span class="smart-icon">🎯</span>
+                            <h3>玩法与策略</h3>
+                        </div>
+                        <div class="smart-card-body" id="playstyleSuggestion"></div>
+                    </div>
+                    <div class="smart-card strengths-card">
+                        <div class="smart-card-header">
+                            <span class="smart-icon">💪</span>
+                            <h3>核心优势</h3>
+                        </div>
+                        <div class="smart-card-body" id="strengthsContent"></div>
+                    </div>
+                    <div class="smart-card weaknesses-card">
+                        <div class="smart-card-header">
+                            <span class="smart-icon">🛡️</span>
+                            <h3>风险提示</h3>
+                        </div>
+                        <div class="smart-card-body" id="weaknessesContent"></div>
+                    </div>
+                    <div class="smart-card verdict-card full-smart-width">
+                        <div class="smart-card-header">
+                            <span class="smart-icon">⭐</span>
+                            <h3>综合评定</h3>
+                        </div>
+                        <div class="smart-card-body" id="verdictContent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>数据来源: vstats.gg | 第26赛季 - 第2幕</p>
+        </footer>
+    </div>
+
+    <script src="agent-data.js"></script>
+    <script src="agent-detail.js"></script>
+</body>
+</html>

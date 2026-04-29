@@ -1,0 +1,14 @@
+JS length: 87132
+ACTIVE_ACT patterns: ['9d85c932-4820-c060-09c3-668636d4df1b']
+MAP_ALL patterns: ['ALL']
+RANK_ALL patterns: ['ALL']
+Constants: [('ACTIVE_ACT', '9d85c932-4820-c060-09c3-668636d4df1b'), ('ACTIVE_ACT_SHORT', 'V26 - Act 2'), ('ACTIVE_ACT_LONG', 'Season 26 - Act 2'), ('ACTIVE_PATCH', '12-05'), ('TABLE_AGENTS', 'agents'), ('TABLE_DUOS', 'duos'), ('TABLE_COMPS', 'comps'), ('RANK_LOW', 'low'), ('RANK_MID', 'mid'), ('RANK_HIGH', 'high'), ('MAP_ALL', 'ALL'), ('RANK_ALL', 'ALL')]
+UUID patterns (83): ['03dfd004-45d4-ebfd-ab0a-948ce780dac4', '0981a882-4e7d-371a-70c4-c3b4f46c504a', '0e38b510-41a8-5780-5e8f-568b2a4f2d6c', '117ed9e3-49f3-6512-3ccf-0cada7e3823b', '16118998-4705-5813-86dd-0292a2439d90', '1b47567f-8f7b-444b-aae3-b0c634622d10', '1baa85b4-4c70-1284-64bb-6481dfc3bb4e', '1c18ab1f-420d-0d8b-71d0-77ad3c439115', '1dbf2edd-4729-0984-3115-daa5eed44993', '1e58de9c-4950-5125-93e9-a0aee9f98746', '224b0a95-48b9-f703-1bd8-67aca101a61f', '22697a3d-45bf-8dd7-4fec-84a9e28c69d7', '22d10d66-4d2a-a340-6c54-408c7bd53807', '292f58db-4c17-89a7-b1c0-ba988f0e9d98', '29a0cfab-485b-f5d5-779a-b59f85e204a8', '2bee0dc9-4ffe-519b-1cbd-7fbe763a6047', '2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba', '2de5423b-4aad-02ad-8d9b-c0a931958861', '2f59173c-4bed-b6c3-2191-dea9b58be9c7', '2fb9a4fd-47b8-4e7d-a969-74b4046ebd53']
+
+Trying: https://www.vstats.gg/statistics/ALL/ALL/agent.json.gz
+  Status: 200, Length: 2720, CT: text/html
+  HTML response
+
+Trying: https://www.vstats.gg/statistics/ALL/V26Act2/agent.json.gz
+  Status: 200, Length: 2720, CT: text/html
+  HTML response

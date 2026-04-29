@@ -1,0 +1,6 @@
+HTML length: 2720
+Found 1 JS files:
+  /assets/index-VdEKILD-.js
+
+=== Analyzing: https://www.vstats.gg/assets/index-VdEKILD-.js ===
+JS length: 87132

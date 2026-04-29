@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALORANT 特工数据统计</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>@桐集集</h1>
+            <div class="controls">
+                <div class="filter-group">
+                    <select id="roleFilter">
+                        <option value="all">全部角色</option>
+                        <option value="Duelist">决斗者</option>
+                        <option value="Initiator">先锋</option>
+                        <option value="Controller">控场者</option>
+                        <option value="Sentinel">守卫</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select id="sortBy">
+                        <option value="winRate">按胜率</option>
+                        <option value="pickRate">按选取率</option>
+                        <option value="kd">按K/D</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-grid">
+            <!-- Left Panel -->
+            <div class="left-panel">
+                <div class="stat-card">
+                    <h3>最高胜率</h3>
+                    <div class="stat-with-avatar">
+                        <div class="avatar-small" id="highestWinRateAvatar"></div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="highestWinRate">-</div>
+                            <div class="stat-label" id="highestWinRateAgent">-</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <h3>最高选取率</h3>
+                    <div class="stat-with-avatar">
+                        <div class="avatar-small" id="highestPickRateAvatar"></div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="highestPickRate">-</div>
+                            <div class="stat-label" id="highestPickRateAgent">-</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-pick-agents">
+                    <h3>热门选取率 TOP 5</h3>
+                    <div id="topPickAgentsList">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Panel - Table -->
+            <div class="center-panel">
+                <div class="table-header">
+                    <h2>特工排行榜</h2>
+                    <span class="table-count" id="totalAgents">24 位特工</span>
+                </div>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>排名</th>
+                                <th>特工</th>
+                                <th>角色</th>
+                                <th>胜率</th>
+                                <th>选取率</th>
+                                <th>K/D</th>
+                            </tr>
+                        </thead>
+                        <tbody id="agentsTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="right-panel">
+                <div class="map-pool">
+                    <h3>当前图池</h3>
+                    <div id="mapPool">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+                <div class="top-agents">
+                    <h3>胜率 TOP 5</h3>
+                    <div id="topAgentsList">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>数据来源: vstats.gg | 第26赛季 - 第2幕</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
